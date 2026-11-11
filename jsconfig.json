@@ -1,0 +1,11 @@
+{
+    "exclude":[
+        "lib/**"
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "checkJs": true,
+        "noEmit": true,
+        "strict": true
+    }
+}
