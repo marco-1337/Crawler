@@ -8,15 +8,14 @@ import TestScene from "./scenes/test-scene.js";
 const config = {
         type: Phaser.AUTO,
 	parent: "gameContainer",
-	backgroundColor: "#3c7d30",
+	backgroundColor: "#000000",
 	pixelArt: true,
 	scale: {
-		// Adapts to screen game
-		mode: Phaser.Scale.FIT,
-		autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
 		width: 320,
 		height: 240,
-		zoom: 1
+		// Adapts to screen game
+		mode: Phaser.Scale.ScaleModes.FIT,
+		autoCenter: Phaser.Scale.Center.CENTER_BOTH,
 	},
 	scene: [LoadScene, TestScene],
 	physics: { 
